@@ -2,28 +2,49 @@ application:
   name: DevOpsSimulator
   version: 1.0.0
   environment: production
+  experimental_mode: false
 
 server:
   host: 0.0.0.0
   port: 8080
   ssl_enabled: true
+  multi_port: [9000, 9001, 9002]
 
 logging:
   level: INFO
   format: json
   output: /var/log/app.log
+  ai_analysis: disabled
 
 database:
   host: prod-db.example.com
   port: 5432
   name: devops_prod
+  distributed: false
 
 features:
   auto_scaling: true
   load_balancer: enabled
   backup_enabled: true
+  chaos_engineering: disabled
 
-# Development configuration (enabled via environment variable)
+ai_features:
+  predictive_scaling: false
+  anomaly_detection: false
+  auto_optimization: false
+  model_version: "v2.1.0"
+
+cloud_providers:
+  - aws
+  - azure
+  - gcp
+  - digitalocean
+
+security:
+  zero_trust: disabled
+  encryption: AES-256
+  audit_logging: basic
+
 development:
   enabled: false
   port: 3000

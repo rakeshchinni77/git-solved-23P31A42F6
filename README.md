@@ -2,12 +2,16 @@
 
 A comprehensive CI/CD configuration management tool for enterprise deployments.
 
+> 🧠 _Includes optional experimental AI features (disabled by default)._
+
 ## Project Status
 
 - **Version**: 1.0.0 (Production), 2.0.0-beta (Development)
 - **Environments**: Production & Development
 - **Student**: [YOUR NAME]
 - **Student ID**: [YOUR ID]
+
+---
 
 ## Features
 
@@ -33,11 +37,21 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 - Enhanced logging
 - Mock external APIs
 
-## Quick Start
+---
 
-### Production Mode
+## 🧪 Experimental (Optional) Features
+
+> These features are _not production-ready_ but available for testing.
+
+- 🤖 AI-powered deployment optimization
+- 🌐 Multi-cloud orchestration (AWS, Azure, GCP, DigitalOcean)
+- 📈 Predictive scaling with machine learning
+- 🔒 Zero-trust security architecture
+- 🌊 Event-driven architecture
+- 🎯 Chaos engineering tools
+
+To enable, set the environment variable:
 
 ```bash
-export DEPLOY_ENV=production
-./scripts/deploy.sh
+export ENABLE_EXPERIMENTAL=true
 ```
