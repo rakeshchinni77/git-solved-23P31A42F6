@@ -25,3 +25,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.swp
+
+# Test file
+test.txt
